@@ -1,0 +1,19 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+
+Scanner input = new Scanner(System.in);
+       double num,num2,media;
+  System.out.println("digite o primeiro numero");
+  num= input.nextDouble();
+  System.out.println("digite o segundo numero");
+  num2=input.nextDouble();
+  media = (num+num2)/2;
+  System.out.println("A media aritimética dos dois numeros é"+media);
+
+ }
+}
