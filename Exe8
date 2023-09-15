@@ -1,0 +1,20 @@
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+int carro,moto,rodasCarro,rodasMoto,totalRodas;
+      Scanner input = new Scanner(System.in);
+      System.out.println("quantos carros tem no estacionamento");
+      carro=input.nextInt();
+      System.out.println("quantas motos tem no estacionamento");
+      moto=input.nextInt();
+      rodasCarro=carro*4;
+      rodasMoto=moto*2;
+      totalRodas=rodasMoto+rodasCarro;
+       System.out.println("Nesse estacionamento tem no total de "+totalRodas+" rodas");
+    }
+    
+}
