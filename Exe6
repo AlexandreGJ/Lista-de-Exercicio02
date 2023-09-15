@@ -1,0 +1,21 @@
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+        double longaritimo;
+        int num1, num2;
+        System.out.println("Digite o primeiro numero");
+        Scanner input = new Scanner(System.in);
+        num1 = input.nextInt();
+        System.out.println("Digite o segundo numero");
+        num2 = input.nextInt();
+        longaritimo = Math.log(num1) / Math.log(num2);
+        System.out.println("o logaritmo do primeiro número na base representada pelo segundo número é; " + longaritimo);
+ 
+    }
+ 
+}
+
