@@ -1,0 +1,18 @@
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+double minutos,horas,segundos;
+      Scanner input = new Scanner(System.in);
+      System.out.println("Digite uma unidade em segundos");
+      segundos=input.nextDouble();
+      minutos= segundos/60;
+      horas= segundos/3600;
+       System.out.println("esses segundos são "+minutos+" minutos");
+      System.out.println("esses segundos são "+horas+" horas");
+    }
+    
+}
