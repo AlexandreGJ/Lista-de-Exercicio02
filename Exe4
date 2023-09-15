@@ -1,0 +1,23 @@
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+        double capital,jurosPorc,juros,montante;
+                int prazoMes;
+System.out.println("Digite o Valor a ser Aplicado: ");
+      Scanner input = new Scanner(System.in);
+     capital= input.nextInt();
+      System.out.println("digite quantos meses seu capital ficara aplicado: ");
+      prazoMes= input.nextInt();
+      System.out.println("digite qual a taxa de juros mensal : ");
+      juros=input.nextDouble();
+      jurosPorc=juros/100;
+      
+      montante= capital*Math.pow(1+jurosPorc,prazoMes);
+      System.out.printf("O motante a ser recbido será %.2f ",montante,"Reais");
+    }
+ 
+}
