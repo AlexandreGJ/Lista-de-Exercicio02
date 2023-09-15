@@ -1,20 +1,24 @@
-package javaapplication51;
- 
+package javaapplication1;
+
 import java.util.Scanner;
- 
-public class JavaApplication51 {
- 
+
+public class JavaApplication1 {
+
     public static void main(String[] args) {
-int carro,moto,rodasCarro,rodasMoto,totalRodas;
-      Scanner input = new Scanner(System.in);
-      System.out.println("quantos carros tem no estacionamento");
-      carro=input.nextInt();
-      System.out.println("quantas motos tem no estacionamento");
-      moto=input.nextInt();
-      rodasCarro=carro*4;
-      rodasMoto=moto*2;
-      totalRodas=rodasMoto+rodasCarro;
-       System.out.println("Nesse estacionamento tem no total de "+totalRodas+" rodas");
+        int total_veiculos, total_rodas, carros, motos;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Digite o total de veículos: ");
+        total_veiculos = input.nextInt();
+
+        System.out.println("Digite o total de rodas: ");
+        total_rodas = input.nextInt();
+
+        carros = (total_rodas - (total_veiculos * 2)) / 2;
+        motos = total_veiculos - carros;
+
+        System.out.println("O número de carros no estacionamento é " + carros + " e motos é " + motos);
+
     }
-    
+
 }
