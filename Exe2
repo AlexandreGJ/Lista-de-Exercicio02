@@ -1,1 +1,17 @@
-
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+double produto,juros;
+       Scanner input = new Scanner(System.in);
+       System.out.println("Bem vindo ao supermercado");
+       System.out.println("Qual o valor do produto escolhido?");
+       produto=input.nextDouble();
+       juros= (produto/10)+produto;
+       System.out.println("O valor do seu produto com juros será "+juros);
+    }
+    
+}
