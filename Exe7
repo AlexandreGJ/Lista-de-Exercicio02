@@ -1,0 +1,21 @@
+package javaapplication51;
+ 
+import java.util.Scanner;
+ 
+public class JavaApplication51 {
+ 
+    public static void main(String[] args) {
+double salario,vendas,porcVendas,porcentagem,lucro;
+       Scanner input = new Scanner(System.in);
+       System.out.println("digite o valor do seu salario fixo no mes");
+       salario=input.nextDouble();
+       System.out.println("digite o valor total das suas vendas realizadas no mes");
+       vendas=input.nextDouble();
+       System.out.println("Qual porcentagem voce recebe em cima das vendas?");
+       porcVendas=input.nextDouble();
+       porcentagem= porcVendas/100;
+       lucro=porcentagem*vendas;
+       System.out.println("Seu salario contabilizando o seu percentual de vendas é "+(lucro+salario));
+    }
+    
+}
